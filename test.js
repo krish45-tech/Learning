@@ -1,2 +1,2 @@
-const a="apple"
-const b="ball";
+const a = "apple";
+const b = "Bat";
