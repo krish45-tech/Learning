@@ -1,1 +1,1 @@
-let Tiger = "Power Star";
+let Tiger = "NTR";
