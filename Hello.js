@@ -1,3 +1,3 @@
 const a = "apple";
 const b="ball";
-var s="satish";
+var s="satti";
