@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION public.data_insert_trigger_fun()                                                     
+CREATE OR REPLACE FUNCTION sku_insert_trigger_testing_fun()                                                     
     RETURNS trigger                                                                                                  
     LANGUAGE plpgsql                                                                                                 
 AS 
@@ -16,7 +16,7 @@ BEGIN
                                                                                                                                    
                          FOR i IN 0..(level3_count-1) LOOP                                                                         
                              product_data := NEW.data->'level3ProductsList'->i;                                                    
-                                 INSERT INTO gopi_trigger_table ( id,                                                                   
+                                 INSERT INTO trigger_table ( id,                                                                   
                                                              data,                                                                 
                                                              product,                                                              
                                                              base_category_id,                                                     
@@ -123,7 +123,7 @@ BEGIN
                                                                     product_data,                                                     
                                                                     COALESCE(NEW.data->'baseCategory'->>'id',''),                     
                                                                     COALESCE(NEW.data->'baseCategory'->>'value',''),                  
-                                                                    COALESCE(NEW.data->>'storeType',''),                              
+                                                                    'EMAHILA',                              
                                                                     COALESCE(NEW.data->>'productLevel1Id',''),                        
                                                                     COALESCE(NEW.data->>'productLevel1Title',''),                     
                                                                     COALESCE(NEW.data->>'productLevel2Id',''),                        

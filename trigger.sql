@@ -4,6 +4,8 @@ ON gopi_table
 FOR EACH ROW
 EXECUTE FUNCTION data_insert_trigger_fun();
 
+UPDATE gopi_table SET data = jsonb_set(data, '{actionPerformed}','"UPDATE"');
+
 UPDATE gopi_table SET data=jsonb_insert(data,'{nutrients,0}','20cal') where id='3wrl';
 
 UPDATE gopi_table SET data = jsonb_set(data, '{nutrients}', (data->'nutrients')::jsonb || '["20 cal"]') WHERE id = '3wrl';

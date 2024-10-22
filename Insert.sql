@@ -31,8 +31,6 @@ BEGIN
                                             base_category_id,
                                             base_category_value,
                                             storetype,
-                                            productlevel1_id,
-                                            productlevel1_title,
                                             productlevel2_id,
                                             productlevel2_title,
                                             productlevel3_id,
