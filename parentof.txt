@@ -1,0 +1,15 @@
+  AP_GREEN: "M01na730PRFREG2019103031312545UNH001"                      //count in bizstore table 0
+  SHAKTIMAN: "M01oyw40PRFREG2020061517302318UNH001"                     //count in bizstore table 1
+  INPUTS: "M00k4jn0PRFREG2017121337719606UNH001"                        //count in bizstore table 0
+  OUTPUTS: "M00k4jn0PRFREG2017121337719606UNH001"                       //count in bizstore table 0
+  ADMIN: "M00k4jn0PRFREG2017121337719606UNH001"                         //count in bizstore table 0
+  PRORISE_STORE: "M01q4ng0PRFREG2020122338940819UNH001"                 //count in bizstore table 0
+  GEO_AGRO_PRO: "M01q40j0PRFREG2020113047851505UNH001"                  //count in bizstore table 0
+  EMAHILA: "M01kloo0PRFREG2018071935762582UNH001"                       //count in bizstore table 9590
+  SIKKIM: "M01rg710PRFREG2021052132961475UNH001"                        //count in bizstore table 0
+  MSB: "M01kloo0PRFREG2018071935762582UNH001"                           //count in bizstore table 9590
+  KHETIGHAR: "M01tse50PRFREG2023071722407351UNH001"     // Sri Bio      //count in bizstore table 0
+  SAM_INPUTS: "M01tpna0PRFREG2023071227088281UNH001"   // samunnati     //count in bizstore table 0
+  SAM_OUTPUTS: "M01tpna0PRFREG2023071227088281UNH001" // samunnati      //count in bizstore table 0
+  SAM_CMP: "M01tpna0PRFREG2023071227088281UNH001"     // samunnati      //count in bizstore table 0
+  SAM_TMP: "M01tpna0PRFREG2023071227088281UNH001"                       //count in bizstore table 0
