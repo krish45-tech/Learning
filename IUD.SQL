@@ -9,7 +9,7 @@ new_level3_count INT;
 new_data jsonb;
 product_data jsonb;
 del_id TEXT;
-i INT;
+rec RECORD;
 BEGIN
     old_level3_count :=jsonb_array_length(OLD.data->'level3ProductsList');
     new_level3_count := jsonb_array_length(NEW.data->'level3ProductsList');
@@ -233,6 +233,19 @@ BEGIN
         END LOOP;
 
 	END IF;
+
+    -- UPDATE LOGIC
+
+    FOR rec IN SELECT new_level3 AS updated_sku, new_level3->>'productLevel3Id' AS updated_sku_id
+                FROM jsonb_array_elements(NEW.data->'level3ProductsList') AS new_level3
+                WHERE new_level3->>'productLevel3Id' NOT IN (
+                    SELECT old_level3->>'productLevel3Id' 
+                    FROM jsonb_array_elements(OLD.data->'level3ProductsList') AS old_level3
+                    WHERE old_level3->'LUT' < new_level3->'LUT'
+                )
+    LOOP
+        UPDATE trigger_table SET 
+    END LOOP;
 
     -- DELETE LOGIC
 
